@@ -1,12 +1,14 @@
-Penjelasan Keamanan dan Alasan Penggunaan PBKDF2
+__Penjelasan Keamanan dan Alasan Penggunaan PBKDF2__
 
-Cara Kerja PBKDF2:
+__Cara Kerja PBKDF2:__
+
 PBKDF2 adalah algoritma key derivation function berbasis password.
 Password asli dikombinasikan dengan salt untuk mencegah serangan rainbow table.
 Fungsi ini menjalankan iterasi hashing berkali-kali untuk menambah kompleksitas komputasi, sehingga memperlambat serangan brute force.
 Hasil akhirnya adalah hash yang sulit dibalik.
 
-Mengapa PBKDF2 Dipilih:
+__Mengapa PBKDF2 Dipilih:__
+
 Kuat terhadap brute force attacks: Karena iterasi tinggi, serangan brute force membutuhkan waktu lebih lama.
 Dukungan luas: PBKDF2 adalah algoritma yang sudah terstandar dan didukung oleh berbagai pustaka kriptografi.
 Mudah digunakan: Algoritma ini memungkinkan kombinasi salt, password, dan kunci tambahan seperti SECRET_KEY.
